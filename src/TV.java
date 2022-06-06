@@ -1,11 +1,13 @@
 public class TV {
 
-    int channel = 1;
-    int volumeLevel = 1;
-    boolean isOn = false;
+    private int channel = 1;
+    private int volumeLevel = 1;
+    private boolean isOn = false;
+
+    private static int numberOfTv = 0;
 
     public TV() {
-
+        numberOfTv++;
     }
 
     public void turnOn() {
@@ -50,5 +52,18 @@ public class TV {
         if (this.isOn == true && this.volumeLevel > 1) {
             this.volumeLevel--;
         }
+    }
+
+    static int getNumberOfTv() {
+
+        return numberOfTv;
+    }
+
+    public int getChannel() {
+        return channel;
+    }
+
+    public int getVolumeLevel() {
+        return volumeLevel;
     }
 }

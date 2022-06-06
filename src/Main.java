@@ -1,6 +1,8 @@
 public class Main {
     public static void main(String[] args) {
 
+
+        System.out.println("Number of TVs " + TV.getNumberOfTv());
         TV tv1 = new TV();
         tv1.turnOn();
         tv1.setChannel(30);
@@ -12,9 +14,10 @@ public class Main {
         tv2.setChannel(22);
         tv2.channelUp();
 
-        System.out.println("tv1 channel is "+tv1.channel+" and volume is "+tv1.volumeLevel);
-        System.out.println("tv2 channel1 is "+tv2.channel+" and volume is "+tv2.volumeLevel);
 
+        System.out.println("Number of TVs " + TV.getNumberOfTv());
+        System.out.println("tv1 channel is " + tv1.getChannel() + " and volume is " + tv1.getVolumeLevel());
+        System.out.println("tv2 channel1 is " + tv2.getChannel() + " and volume is " + tv2.getVolumeLevel());
 
 
     }
