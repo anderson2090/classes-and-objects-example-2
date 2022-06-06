@@ -14,11 +14,21 @@ public class Main {
         tv2.setChannel(22);
         tv2.channelUp();
 
+        printTv(tv1);
+        printTv(tv2);
 
-        System.out.println("Number of TVs " + TV.getNumberOfTv());
-        System.out.println("tv1 channel is " + tv1.getChannel() + " and volume is " + tv1.getVolumeLevel());
-        System.out.println("tv2 channel1 is " + tv2.getChannel() + " and volume is " + tv2.getVolumeLevel());
+
+//        System.out.println("Number of TVs " + TV.getNumberOfTv());
+//        System.out.println("tv1 channel is " + tv1.getChannel() + " and volume is " + tv1.getVolumeLevel());
+//        System.out.println("tv2 channel1 is " + tv2.getChannel() + " and volume is " + tv2.getVolumeLevel());
 
 
     }
+
+    public static void printTv(TV tv){
+        System.out.println("Tv's volume is "+ tv.getVolumeLevel());
+        System.out.println("Tv's channel is"+tv.getChannel());
+    }
+
+
 }
