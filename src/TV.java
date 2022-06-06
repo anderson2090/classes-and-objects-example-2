@@ -1,12 +1,14 @@
 public class TV {
 
+    private String name = "";
     private int channel = 1;
     private int volumeLevel = 1;
     private boolean isOn = false;
 
     private static int numberOfTv = 0;
 
-    public TV() {
+    public TV(String name) {
+        this.name = name;
         numberOfTv++;
     }
 

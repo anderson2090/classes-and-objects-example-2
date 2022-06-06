@@ -1,21 +1,33 @@
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
 
+        // An array of objects
+        TV[] myTvs = {new TV("Tv1"), new TV("Tv2"), new TV("Tv3")};
 
-        System.out.println("Number of TVs " + TV.getNumberOfTv());
-        TV tv1 = new TV();
-        tv1.turnOn();
-        tv1.setChannel(30);
-        tv1.setVolume(3);
 
-        TV tv2 = new TV();
+        TV[] myTvs2 = new TV[100];
 
-        tv2.turnOn();
-        tv2.setChannel(22);
-        tv2.channelUp();
+        for (int i = 0; i < myTvs2.length - 1; i++) {
+            myTvs2[i] = new TV("Tv" + i);
+        }
 
-        printTv(tv1);
-        printTv(tv2);
+
+//        System.out.println("Number of TVs " + TV.getNumberOfTv());
+//        TV tv1 = new TV();
+//        tv1.turnOn();
+//        tv1.setChannel(30);
+//        tv1.setVolume(3);
+//
+//        TV tv2 = new TV();
+//
+//        tv2.turnOn();
+//        tv2.setChannel(22);
+//        tv2.channelUp();
+//
+//        printTv(tv1);
+//        printTv(tv2);
 
 
 //        System.out.println("Number of TVs " + TV.getNumberOfTv());
@@ -25,10 +37,10 @@ public class Main {
 
     }
 
-    public static void printTv(TV tv){
-        System.out.println("Tv's volume is "+ tv.getVolumeLevel());
-        System.out.println("Tv's channel is"+tv.getChannel());
-    }
+//    public static void printTv(TV tv){
+//        System.out.println("Tv's volume is "+ tv.getVolumeLevel());
+//        System.out.println("Tv's channel is"+tv.getChannel());
+//    }
 
 
 }
